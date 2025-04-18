@@ -32,8 +32,8 @@
                 <div class="col-lg-12">
                     <div class="header-one-wrapper">
                         <div class="left-side-header">
-                            <a href="index-2.html" class="logo-area">
-                                <img src="assets/images/logo/logo-1.svg" alt="logo">
+                            <a href="{{ url('/') }}" class="logo-area">
+                                <img src="{{ asset('assets/images/logo/logo.png') }}" height="10px" width="200px" alt="logo">
                             </a>
                         </div>
 
