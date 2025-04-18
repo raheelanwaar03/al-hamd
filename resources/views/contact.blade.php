@@ -165,7 +165,7 @@
                         <div class="pagination-wrapper">
                             <a href="index-2.html">Home</a>
                             <i class="fa-regular fa-chevron-right"></i>
-                            <a class="active" href="contact.html">Contact Us</a>
+                            <a class="active" href="{{ url('/Contact') }}">Contact Us</a>
                         </div>
                         <!-- breadcrumb pagination area -->
                         <h2 class="title">Contact Us</h2>

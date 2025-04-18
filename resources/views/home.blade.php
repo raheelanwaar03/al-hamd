@@ -55,7 +55,7 @@
 
                         <div class="header-right-area-one">
                             <div class="buttons-area">
-                                <a href="contact.html" class="rts-btn btn-primary border-radius">Admission Now</a>
+                                <a href="{{ url('/Contact') }}" class="rts-btn btn-primary border-radius">Admission Now</a>
                             </div>
                             <div class="menu-btn" id="menu-btn">
                                 <svg width="20" height="16" viewBox="0 0 20 16" fill="none"
