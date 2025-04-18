@@ -281,7 +281,7 @@
                         <div class="footer-single-wized left-logo">
                             <div class="head">
                                 <a href="#">
-                                    <img src="assets/images/logo/logo-1.svg" alt="logo" loading="lazy">
+                                    <img src="{{ asset('assets/images/logo/logo.png') }}" height="20px" width="200px" alt="logo" loading="lazy">
                                 </a>
                             </div>
                             <div class="body">

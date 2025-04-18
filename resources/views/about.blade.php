@@ -114,7 +114,8 @@
                 <div class="header-one-wrapper">
                     <div class="left-side-header">
                         <a href="{{ url('/') }}" class="logo-area">
-                            <img src="{{ asset('assets/images/logo/logo.png') }}" height="10px" width="200px" alt="logo">
+                            <img src="{{ asset('assets/images/logo/logo.png') }}" height="10px" width="200px"
+                                alt="logo">
                         </a>
                     </div>
 
@@ -253,7 +254,8 @@
                                         alt="">About Us</p>
                                 <h2 class="section-title">Discover Our Mission for {{ env('APP_NAME') }} Academy</h2>
                                 <p class="desc">Welcome to Sutdykids, where education meets inspiration, and every
-                                    <br> child's journey is a story of growth and discovery.</p>
+                                    <br> child's journey is a story of growth and discovery.
+                                </p>
                             </div>
                             <div class="about-wrapper-area">
                                 <ul class="about-wrapper">
@@ -564,7 +566,8 @@
                         <div class="footer-single-wized left-logo">
                             <div class="head">
                                 <a href="#">
-                                    <img src="assets/images/logo/logo-1.svg" alt="logo" loading="lazy">
+                                    <img src="{{ asset('assets/images/logo/logo.png') }}" height="20px"
+                                        width="200px" alt="logo" loading="lazy">
                                 </a>
                             </div>
                             <div class="body">
