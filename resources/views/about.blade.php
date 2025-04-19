@@ -35,8 +35,8 @@
                             <div class="left-information">
                                 <a href="mailto:info@alhamdschool.com" class="email"><i
                                         class="fa-light fa-envelope"></i>info@alhamdschool.com</a>
-                                <a href="tel:+92 313 0567126" class="email"><i
-                                        class="fa-light fa-phone"></i>+92 313 0567126</a>
+                                <a href="tel:+92 313 0567126" class="email"><i class="fa-light fa-phone"></i>+92 313
+                                    0567126</a>
                             </div>
                             <div class="right-information">
                                 <ul class="social-area">
@@ -78,8 +78,7 @@
                 <div class="header-one-wrapper">
                     <div class="left-side-header">
                         <a href="{{ url('/') }}" class="logo-area">
-                            <img src="{{ asset('assets/images/logo.png') }}" width="80px"
-                                alt="logo">
+                            <img src="{{ asset('assets/images/logo.png') }}" width="80px" alt="logo">
                         </a>
                     </div>
 
@@ -223,7 +222,8 @@
                                 <p class="pre-title"><img src="assets/images/banner/title-img.svg"
                                         alt="">About Us</p>
                                 <h2 class="section-title">Discover Our Mission for {{ env('APP_NAME') }} Academy</h2>
-                                <p class="desc">Welcome to {{ env('APP_NAME') }}, where education meets inspiration, and every
+                                <p class="desc">Welcome to {{ env('APP_NAME') }}, where education meets inspiration,
+                                    and every
                                     <br> child's journey is a story of growth and discovery.
                                 </p>
                             </div>
@@ -309,8 +309,8 @@
                 <div class="row g-5">
                     <div class="col-lg-4">
                         <div class="gallery-wrapper">
-                            <img src="assets/images/course/12.jpg" alt="gallery-image">
-                            <a href="assets/images/course/12.jpg" class="gallery-image">
+                            <img src="{{ asset('assets/images/events/1.jpeg') }}" alt="gallery-image">
+                            <a href="{{ asset('assets/images/events/1.jpeg') }}" class="gallery-image">
                                 <div class="item-overlay">
                                     <span>
                                         <i class="fa-light fa-plus"></i>
@@ -321,8 +321,8 @@
                     </div>
                     <div class="col-lg-4">
                         <div class="gallery-wrapper">
-                            <img src="assets/images/course/13.jpg" alt="gallery-image">
-                            <a href="assets/images/course/13.jpg" class="gallery-image">
+                            <img src="{{ asset('assets/images/events/2.jpeg') }}" alt="gallery-image">
+                            <a href="{{ asset('assets/images/events/2.jpeg') }}" class="gallery-image">
                                 <div class="item-overlay">
                                     <span>
                                         <i class="fa-light fa-plus"></i>
@@ -333,8 +333,8 @@
                     </div>
                     <div class="col-lg-4">
                         <div class="gallery-wrapper">
-                            <img src="assets/images/course/14.jpg" alt="gallery-image">
-                            <a href="assets/images/course/14.jpg" class="gallery-image">
+                            <img src="{{ asset('assets/images/events/3.jpeg') }}" alt="gallery-image">
+                            <a href="{{ asset('assets/images/events/3.jpeg') }}" class="gallery-image">
                                 <div class="item-overlay">
                                     <span>
                                         <i class="fa-light fa-plus"></i>
@@ -345,8 +345,8 @@
                     </div>
                     <div class="col-lg-4">
                         <div class="gallery-wrapper">
-                            <img src="assets/images/course/15.jpg" alt="gallery-image">
-                            <a href="assets/images/course/15.jpg" class="gallery-image">
+                            <img src="{{ asset('assets/images/events/4.jpeg') }}" alt="gallery-image">
+                            <a href="{{ asset('assets/images/events/4.jpeg') }}" class="gallery-image">
                                 <div class="item-overlay">
                                     <span>
                                         <i class="fa-light fa-plus"></i>
@@ -357,8 +357,8 @@
                     </div>
                     <div class="col-lg-4">
                         <div class="gallery-wrapper">
-                            <img src="assets/images/course/16.jpg" alt="gallery-image">
-                            <a href="assets/images/course/16.jpg" class="gallery-image">
+                            <img src="{{ asset('assets/images/events/7.jpeg') }}" alt="gallery-image">
+                            <a href="{{ asset('assets/images/events/7.jpeg') }}" class="gallery-image">
                                 <div class="item-overlay">
                                     <span>
                                         <i class="fa-light fa-plus"></i>
@@ -369,8 +369,8 @@
                     </div>
                     <div class="col-lg-4">
                         <div class="gallery-wrapper">
-                            <img src="assets/images/course/17.jpg" alt="gallery-image">
-                            <a href="assets/images/course/17.jpg" class="gallery-image">
+                            <img src="{{ asset('assets/images/events/6.jpeg') }}" alt="gallery-image">
+                            <a href="{{ asset('assets/images/events/6.jpeg') }}" class="gallery-image">
                                 <div class="item-overlay">
                                     <span>
                                         <i class="fa-light fa-plus"></i>
@@ -403,8 +403,8 @@
                         <div class="footer-single-wized left-logo">
                             <div class="head">
                                 <a href="#">
-                                    <img src="{{ asset('assets/images/logo.png') }}"
-                                        width="100px" alt="logo" loading="lazy">
+                                    <img src="{{ asset('assets/images/logo.png') }}" width="100px" alt="logo"
+                                        loading="lazy">
                                 </a>
                             </div>
                             <div class="body">
@@ -416,9 +416,9 @@
                                     <li><i class="fa-regular fa-location-dot"></i>Mohalla Rarrieyan, Malkiyar, Haripur
                                     </li>
                                     <li><i class="fa-regular fa-phone"></i><a href="tel:+92 313 0567126">
-                                        +92 313 0567126</a></li>
-                                        <li><i class="fa-regular fa-envelope"></i>
-                                            info@alhamdschool.com</li>
+                                            +92 313 0567126</a></li>
+                                    <li><i class="fa-regular fa-envelope"></i>
+                                        info@alhamdschool.com</li>
                                 </ul>
                             </div>
                         </div>
