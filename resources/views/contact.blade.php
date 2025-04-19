@@ -35,8 +35,8 @@
                             <div class="left-information">
                                 <a href="mailto:info@alhamdschool.com" class="email"><i
                                         class="fa-light fa-envelope"></i>info@alhamdschool.com</a>
-                                <a href="tel:+92-305-4433555" class="email"><i
-                                        class="fa-light fa-phone"></i>+92-305-4433555</a>
+                                <a href="tel:+92 313 0567126" class="email"><i class="fa-light fa-phone"></i>+92 313
+                                    0567126</a>
                             </div>
                             <div class="right-information">
                                 <ul class="social-area">
@@ -114,7 +114,8 @@
                 <div class="header-one-wrapper">
                     <div class="left-side-header">
                         <a href="{{ url('/') }}" class="logo-area">
-                            <img src="{{ asset('assets/images/logo/logo.png') }}" height="10px" width="200px" alt="logo">
+                            <img src="{{ asset('assets/images/logo.png') }}" width="80px"
+                                alt="logo">
                         </a>
                     </div>
 
@@ -136,7 +137,7 @@
 
                     <div class="header-right-area-one">
                         <div class="buttons-area">
-                            <a href="registration.html" class="rts-btn btn-primary">View More</a>
+                            <a href="{{ url('/Contact') }}" class="rts-btn btn-primary">View More</a>
                         </div>
                         <div class="menu-btn" id="menu-btn">
                             <svg width="20" height="16" viewBox="0 0 20 16" fill="none"
@@ -198,7 +199,9 @@
                                     </div>
                                     <div class="text">
                                         <h4>Phone</h4>
-                                        <p class="desc"><a href="#"> +92-305-4433555</a></p>
+                                        <p class="desc"><a href="#"> +92 313 0567126 <br>
+                                                0995 6128026
+                                            </a></p>
                                     </div>
                                 </li>
                                 <li class="phone bg-four">
@@ -208,16 +211,19 @@
                                     <div class="text">
                                         <h4>Email Address</h4>
                                         <p class="desc"><a href="#">
-                                                info@alhamdschool.com</a></p>
+                                                info@alhamdschool.com
+                                                <br>
+                                                alhamdislmic@gmail.com
+                                            </a></p>
                                     </div>
                                 </li>
                                 <li class="phone bg-one">
                                     <div class="icon">
-                                        <img src="assets/images/icon/phone.svg" alt="">
+                                        <img src="{{ asset('assets/images/icon/location.png') }}" alt="">
                                     </div>
                                     <div class="text">
                                         <h4>Location Address</h4>
-                                        <p class="desc">Faisalabad,Punjab,Pakistan</p>
+                                        <p class="desc">Mohalla Rarrieyan, Malkiyar, Haripur</p>
                                     </div>
                                 </li>
                             </ul>
@@ -281,7 +287,8 @@
                         <div class="footer-single-wized left-logo">
                             <div class="head">
                                 <a href="#">
-                                    <img src="{{ asset('assets/images/logo/logo.png') }}" height="20px" width="200px" alt="logo" loading="lazy">
+                                    <img src="{{ asset('assets/images/logo.png') }}"
+                                        width="100px" alt="logo" loading="lazy">
                                 </a>
                             </div>
                             <div class="body">
@@ -290,10 +297,12 @@
                                     all backgrounds.
                                 </p>
                                 <ul class="wrapper-list">
-                                    <li><i class="fa-regular fa-location-dot"></i>Faislabad, Punjab, Pakistan
+                                    <li><i class="fa-regular fa-location-dot"></i>Mohalla Rarrieyan, Malkiyar, Haripur
                                     </li>
-                                    <li><i class="fa-regular fa-phone"></i><a href="tel:+92-305-4433555">
-                                            +92-305-4433555</a></li>
+                                    <li><i class="fa-regular fa-phone"></i><a href="tel:+92 313 0567126">
+                                        +92 313 0567126</a></li>
+                                    <li><i class="fa-regular fa-envelope"></i>
+                                        info@alhamdschool.com</li>
                                 </ul>
                             </div>
                         </div>
@@ -305,10 +314,9 @@
                             </div>
                             <div class="body">
                                 <ul class="menu">
-                                    <li><a href="#">Home</a></li>
-                                    <li><a href="#">About Us</a></li>
-                                    <li><a href="#">Event</a></li>
-                                    <li><a href="#">Contact Us</a></li>
+                                    <li><a href="{{ url('/') }}">Home</a></li>
+                                    <li><a href="{{ url('/About') }}">About Us</a></li>
+                                    <li><a href="{{ url('/Contact') }}">Contact Us</a></li>
                                 </ul>
                             </div>
                         </div>
@@ -344,7 +352,7 @@
                 </p>
                 <div class="footer">
                     <h4 class="title">Got a project in mind?</h4>
-                    <a href="contact.html" class="rts-btn btn-primary">Let's talk</a>
+                    <a href="{{ url('/Contact') }}" class="rts-btn btn-primary">Let's talk</a>
                 </div>
             </div>
         </div>
@@ -353,42 +361,27 @@
             <nav class="nav-main mainmenu-nav mt--30">
                 <ul class="mainmenu metismenu" id="mobile-menu-active">
                     <li>
-                        <a href="#" class="main">Home</a>
+                        <a href="{{ url('/') }}" class="main">Home</a>
                     </li>
                     <li class="menu-item">
-                        <a href="#" class="main">About Us</a>
+                        <a href="{{ url('/About') }}" class="main">About Us</a>
                     </li>
                     <li class="menu-item">
-                        <a href="#" class="main">Contact Us</a>
+                        <a href="{{ url('/Contact') }}" class="main">Contact Us</a>
                     </li>
                 </ul>
             </nav>
 
-            <div class="buttons-area">
-                <a href="#" class="rts-btn btn-border">Log In</a>
-                <a href="#" class="rts-btn btn-primary">Sign Up</a>
-            </div>
-
             <div class="rts-social-style-one pl--20 mt--50">
                 <ul>
                     <li>
-                        <a href="#">
+                        <a href="https://www.facebook.com/share/15VMcb2n5v/">
                             <i class="fa-brands fa-facebook-f"></i>
                         </a>
                     </li>
                     <li>
-                        <a href="#">
-                            <i class="fa-brands fa-twitter"></i>
-                        </a>
-                    </li>
-                    <li>
-                        <a href="#">
+                        <a href="https://www.youtube.com/@Al-hamdIslamicSchoolMalkiyar">
                             <i class="fa-brands fa-youtube"></i>
-                        </a>
-                    </li>
-                    <li>
-                        <a href="#">
-                            <i class="fa-brands fa-linkedin-in"></i>
                         </a>
                     </li>
                 </ul>

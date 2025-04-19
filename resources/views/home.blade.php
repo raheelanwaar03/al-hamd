@@ -33,7 +33,7 @@
                     <div class="header-one-wrapper">
                         <div class="left-side-header">
                             <a href="{{ url('/') }}" class="logo-area">
-                                <img src="{{ asset('assets/images/logo/logo.png') }}" height="10px" width="200px"
+                                <img src="{{ asset('assets/images/logo.png') }}" width="80px"
                                     alt="logo">
                             </a>
                         </div>
@@ -917,9 +917,9 @@
                         <!-- single sized  footer  -->
                         <div class="footer-single-wized left-logo">
                             <div class="head">
-                                <a href="#">
-                                    <img src="{{ asset('assets/images/logo/logo.png') }}" height="20px"
-                                        width="200px" alt="logo" loading="lazy">
+                                <a href="{{ url('/') }}">
+                                    <img src="{{ asset('assets/images/logo.png') }}"
+                                        width="100px" alt="logo" loading="lazy">
                                 </a>
                             </div>
                             <div class="body">
@@ -928,10 +928,12 @@
                                     all backgrounds.
                                 </p>
                                 <ul class="wrapper-list">
-                                    <li><i class="fa-regular fa-location-dot"></i>Faislabad, Punjab, Pakistan
+                                    <li><i class="fa-regular fa-location-dot"></i>Mohalla Rarrieyan, Malkiyar, Haripur
                                     </li>
-                                    <li><i class="fa-regular fa-phone"></i><a href="tel:+92-305-4433555">
-                                            +92-305-4433555</a></li>
+                                    <li><i class="fa-regular fa-phone"></i><a href="tel:+92 313 0567126">
+                                            +92 313 0567126</a></li>
+                                    <li><i class="fa-regular fa-envelope"></i>
+                                            info@alhamdschool.com</li>
                                 </ul>
                             </div>
                         </div>
@@ -943,10 +945,9 @@
                             </div>
                             <div class="body">
                                 <ul class="menu">
-                                    <li><a href="#">Home</a></li>
-                                    <li><a href="#">About Us</a></li>
-                                    <li><a href="#">Event</a></li>
-                                    <li><a href="#">Contact Us</a></li>
+                                    <li><a href="{{ url('/') }}">Home</a></li>
+                                    <li><a href="{{ url('/About') }}">About Us</a></li>
+                                    <li><a href="{{ url('/Contact') }}">Contact Us</a></li>
                                 </ul>
                             </div>
                         </div>
@@ -982,7 +983,7 @@
                 </p>
                 <div class="footer">
                     <h4 class="title">Got a project in mind?</h4>
-                    <a href="contact.html" class="rts-btn btn-primary">Let's talk</a>
+                    <a href="{{ url('/') }}" class="rts-btn btn-primary">Let's talk</a>
                 </div>
             </div>
         </div>
