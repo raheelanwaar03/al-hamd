@@ -130,7 +130,7 @@
                 <div class="row align-items-center">
                     <div class="col-lg-6">
                         <div class="about-image">
-                            <img src="assets/images/about/about-01.png" width="630" alt="">
+                            <img src="{{ asset('assets/images/about/second.jpg') }}" width="630" alt="uimfg">
                         </div>
                     </div>
                     <div class="col-lg-6">
@@ -330,10 +330,10 @@
                             <div class="course-wrapper">
                                 <div class="wrapper-inner">
                                     <div class="image">
-                                        <img src="assets/images/course/01.jpg" alt="">
+                                        <img src="{{ asset('assets/images/brand/seven.jpg') }}" alt="">
                                     </div>
                                     <div class="content">
-                                        <a href="course-details.html">
+                                        <a href="#">
                                             <h4 class="title">Early Explorers (Ages 3-5)</h4>
                                         </a>
                                         <p class="desc">An introduction to colors, shapes, and basic artistic
@@ -352,7 +352,7 @@
                             <div class="course-wrapper two">
                                 <div class="wrapper-inner">
                                     <div class="image">
-                                        <img src="assets/images/course/02.jpg" alt="">
+                                        <img src="{{ asset('assets/images/brand/third.jpg') }}" alt="">
                                     </div>
                                     <div class="content">
                                         <a href="course-details.html">
@@ -374,7 +374,7 @@
                             <div class="course-wrapper three">
                                 <div class="wrapper-inner">
                                     <div class="image">
-                                        <img src="assets/images/course/03.jpg" alt="">
+                                        <img src="{{ asset('assets/images/brand/five.jpg') }}" alt="">
                                     </div>
                                     <div class="content">
                                         <a href="course-details.html">

@@ -164,7 +164,7 @@
                 <div class="col-lg-12">
                     <div class="breadcrumb-main-wrapper">
                         <div class="pagination-wrapper">
-                            <a href="index-2.html">Home</a>
+                            <a href="#">Home</a>
                             <i class="fa-regular fa-chevron-right"></i>
                             <a class="active" href="{{ url('/Contact') }}">Contact Us</a>
                         </div>
