@@ -96,7 +96,7 @@
                 </div>
                 <div class="col-lg-6 order-change order-lg-2 order-sm-1 order-1">
                     <div class="banner-right-img">
-                        <img src="assets/images/banner/01.png" width="672" alt="banner">
+                        <img src="{{ asset('assets/images/banner/m.png') }}" width="672" alt="child">
                     </div>
                 </div>
             </div>
