@@ -20,10 +20,50 @@
     <link rel="stylesheet" href="assets/css/vendor/metismenu.css">
     <!-- custom style css -->
     <link rel="stylesheet" href="assets/css/style.css">
+
+    <style>
+        #popup {
+            display: none;
+            position: fixed;
+            top: 30%;
+            left: 50%;
+            transform: translate(-50%, -30%);
+            background-color: white;
+            padding: 20px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+            z-index: 1000;
+            border-radius: 8px;
+        }
+
+        #overlay {
+            display: none;
+            position: fixed;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background: rgba(0, 0, 0, 0.5);
+            z-index: 999;
+        }
+
+        #closeBtn {
+            margin-top: 10px;
+            padding: 5px 10px;
+        }
+    </style>
+
 </head>
 
 <body>
 
+    {{-- PopUp --}}
+
+    <div id="overlay"></div>
+    <div id="popup">
+        <h2>Welcome!</h2>
+        <p>Principal Massage</p>
+        <button id="closeBtn" style="background-color:#9851f5;color:white;border-radius:20px;">Close</button>
+    </div>
 
     <!-- header style one -->
     <header class="header-one header--sticky">
@@ -33,8 +73,7 @@
                     <div class="header-one-wrapper">
                         <div class="left-side-header">
                             <a href="{{ url('/') }}" class="logo-area">
-                                <img src="{{ asset('assets/images/logo.png') }}" width="80px"
-                                    alt="logo">
+                                <img src="{{ asset('assets/images/logo.png') }}" width="80px" alt="logo">
                             </a>
                         </div>
 
@@ -111,7 +150,8 @@
                     alt="shape_image"></div>
             <div class="shape four" data-speed="0.04" data-revert="true"><img src="assets/images/banner/shape/04.svg"
                     alt="shape_image"></div>
-            <div class="shape five" data-speed="0.04"><img src="assets/images/banner/shape/05.svg" alt="shape_image">
+            <div class="shape five" data-speed="0.04"><img src="assets/images/banner/shape/05.svg"
+                    alt="shape_image">
             </div>
             <div class="shape six" data-speed="0.04"><img src="assets/images/banner/shape/06.svg" alt="shape_image">
             </div>
@@ -175,7 +215,8 @@
                                 </li>
                             </ul>
                             <div class="about-btn-area">
-                                <a href="{{ url('/About') }}" class="rts-btn btn-primary border-radius">About More</a>
+                                <a href="{{ url('/About') }}" class="rts-btn btn-primary border-radius">About
+                                    More</a>
                             </div>
                         </div>
                     </div>
@@ -547,200 +588,6 @@
         </div>
     </section>
     <!-- category area end -->
-
-    <!-- event area start -->
-    {{-- <section class="rts-event-area rts-section-gapTop">
-        <div class="container">
-            <div class="section-title-area text-center">
-                <p class="pre-title justify-content-center"><img src="assets/images/banner/title-img.svg"
-                        alt="">Event</p>
-                <h2 class="section-title">Upcoming Events</h2>
-                <p class="desc">We are thrilled to announce our upcoming event, <br> Explorer's Day a celebration of
-                    knowledge</p>
-            </div>
-            <div class="section-inner">
-                <div class="row g-5">
-                    <div class="col-lg-6">
-                        <div class="event-wrapper">
-                            <div class="wrapper-inner bg-one">
-                                <div class="date">
-                                    <span>29</span>
-                                    January
-                                    <img src="assets/images/events/01.png" width="132" alt=""
-                                        class="shape">
-                                </div>
-                                <div class="content">
-                                    <a href="program-details.html">
-                                        <h4 class="title">Annual Cultural Programme</h4>
-                                        <ul class="meta-wrapper">
-                                            <li><i class="fa-regular fa-clock"></i>9:00 Am - 12:00 Pm</li>
-                                            <li><i class="fa-light fa-location-dot"></i>55 Clark St, Brooklyn, NY
-                                                11201, USA</li>
-                                        </ul>
-                                    </a>
-                                </div>
-                                <div class="shape-icon"><img src="assets/images/events/event-blink.svg"
-                                        alt=""></div>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="col-lg-6">
-                        <div class="event-wrapper two">
-                            <div class="wrapper-inner bg-four">
-                                <div class="date">
-                                    <span>05</span>
-                                    March
-                                    <img src="assets/images/events/01.png" width="132" alt=""
-                                        class="shape">
-                                </div>
-                                <div class="content">
-                                    <a href="program-details.html">
-                                        <h4 class="title">A World of Stories Awaits</h4>
-                                    </a>
-                                    <ul class="meta-wrapper">
-                                        <li><i class="fa-regular fa-clock"></i>9:00 Am - 12:00 Pm</li>
-                                        <li><i class="fa-light fa-location-dot"></i>55 Clark St, Brooklyn, NY 11201,
-                                            USA</li>
-                                    </ul>
-                                </div>
-                                <div class="shape-icon"><img src="assets/images/events/event-blink.svg"
-                                        alt=""></div>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="col-lg-6">
-                        <div class="event-wrapper three">
-                            <div class="wrapper-inner bg-two">
-                                <div class="date">
-                                    <span>11</span>
-                                    March
-                                    <img src="assets/images/events/01.png" width="132" alt=""
-                                        class="shape">
-                                </div>
-                                <div class="content">
-                                    <a href="program-details.html">
-                                        <h4 class="title">World Drawing Day</h4>
-                                    </a>
-                                    <ul class="meta-wrapper">
-                                        <li><i class="fa-regular fa-clock"></i>9:00 Am - 12:00 Pm</li>
-                                        <li><i class="fa-light fa-location-dot"></i>55 Clark St, Brooklyn, NY 11201,
-                                            USA</li>
-                                    </ul>
-                                </div>
-                                <div class="shape-icon"><img src="assets/images/events/event-blink.svg"
-                                        alt=""></div>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="col-lg-6">
-                        <div class="event-wrapper four">
-                            <div class="wrapper-inner bg-three">
-                                <div class="date">
-                                    <span>19</span>
-                                    April
-                                    <img src="assets/images/events/01.png" width="132" alt=""
-                                        class="shape">
-                                </div>
-                                <div class="content">
-                                    <a href="program-details.html">
-                                        <h4 class="title">World Kids Day</h4>
-                                    </a>
-                                    <ul class="meta-wrapper">
-                                        <li><i class="fa-regular fa-clock"></i>9:00 Am - 12:00 Pm</li>
-                                        <li><i class="fa-light fa-location-dot"></i>55 Clark St, Brooklyn, NY 11201,
-                                            USA</li>
-                                    </ul>
-                                </div>
-                                <div class="shape-icon"><img src="assets/images/events/event-blink.svg"
-                                        alt=""></div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-            <div class="brand-area">
-                <div class="slider-inner">
-                    <div class="swiper mySwiper-category-1 swiper-data"
-                        data-swiper='{
-                                "spaceBetween":30,
-                                "slidesPerView":3,
-                                "loop": true,
-                                "speed": 1500,
-                                "autoplay":{
-                                    "delay":"4000"
-                                },
-                                "breakpoints":{
-                                "0":{
-                                    "slidesPerView":2,
-                                    "spaceBetween":30},
-                                "320":{
-                                    "slidesPerView":2,
-                                    "spaceBetween":30},
-                                "480":{
-                                    "slidesPerView":3,
-                                    "spaceBetween":30},
-                                "640":{
-                                    "slidesPerView":5,
-                                    "spaceBetween":30},
-                                "840":{
-                                    "slidesPerView":7,
-                                    "spaceBetween":30},
-                                "1140":{
-                                    "slidesPerView":7,
-                                    "spaceBetween":30}
-                                }
-                            }'>
-                        <div class="swiper-wrapper">
-                            <!-- single swiper style -->
-                            <div class="swiper-slide">
-                                <div class="image"><a href="#"><img src="assets/images/brand/01.svg"
-                                            alt=""></a></div>
-                            </div>
-                            <!-- single swiper style -->
-                            <!-- single swiper style -->
-                            <div class="swiper-slide">
-                                <div class="image"><a href="#"><img src="assets/images/brand/02.svg"
-                                            alt=""></a></div>
-                            </div>
-                            <!-- single swiper style -->
-                            <!-- single swiper style -->
-                            <div class="swiper-slide">
-                                <div class="image"><a href="#"><img src="assets/images/brand/03.svg"
-                                            alt=""></a></div>
-                            </div>
-                            <!-- single swiper style -->
-                            <!-- single swiper style -->
-                            <div class="swiper-slide">
-                                <div class="image"><a href="#"><img src="assets/images/brand/04.svg"
-                                            alt=""></a></div>
-                            </div>
-                            <!-- single swiper style -->
-                            <!-- single swiper style -->
-                            <div class="swiper-slide">
-                                <div class="image"><a href="#"><img src="assets/images/brand/05.svg"
-                                            alt=""></a></div>
-                            </div>
-                            <!-- single swiper style -->
-                            <!-- single swiper style -->
-                            <div class="swiper-slide">
-                                <div class="image"><a href="#"><img src="assets/images/brand/06.svg"
-                                            alt=""></a></div>
-                            </div>
-                            <!-- single swiper style -->
-                            <!-- single swiper style -->
-                            <div class="swiper-slide">
-                                <div class="image"><a href="#"><img src="assets/images/brand/02.svg"
-                                            alt=""></a></div>
-                            </div>
-                            <!-- single swiper style -->
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </section> --}}
-    <!-- event area end -->
-
     <!-- testimonials area start -->
     <section class="rts-testimonials-area section-bg">
         <div class="container">
@@ -918,8 +765,8 @@
                         <div class="footer-single-wized left-logo">
                             <div class="head">
                                 <a href="{{ url('/') }}">
-                                    <img src="{{ asset('assets/images/logo.png') }}"
-                                        width="100px" alt="logo" loading="lazy">
+                                    <img src="{{ asset('assets/images/logo.png') }}" width="100px" alt="logo"
+                                        loading="lazy">
                                 </a>
                             </div>
                             <div class="body">
@@ -933,7 +780,7 @@
                                     <li><i class="fa-regular fa-phone"></i><a href="tel:+92 313 0567126">
                                             +92 313 0567126</a></li>
                                     <li><i class="fa-regular fa-envelope"></i>
-                                            info@alhamdschool.com</li>
+                                        info@alhamdschool.com</li>
                                 </ul>
                             </div>
                         </div>
@@ -1106,6 +953,34 @@
     </div>
 
     <!-- all scripts -->
+    <script>
+        function shouldShowPopup() {
+            const lastShown = localStorage.getItem('popupShownDate');
+            const today = new Date().toISOString().split('T')[0]; // Get YYYY-MM-DD
+
+            if (lastShown !== today) {
+                localStorage.setItem('popupShownDate', today);
+                return true;
+            }
+            return false;
+        }
+
+        function showPopup() {
+            document.getElementById('overlay').style.display = 'block';
+            document.getElementById('popup').style.display = 'block';
+        }
+
+        function hidePopup() {
+            document.getElementById('overlay').style.display = 'none';
+            document.getElementById('popup').style.display = 'none';
+        }
+
+        document.getElementById('closeBtn').addEventListener('click', hidePopup);
+
+        if (shouldShowPopup()) {
+            showPopup();
+        }
+    </script>
     <!-- jquery min js -->
     <script src="assets/js/vendor/jquery.min.js"></script>
     <!-- jquery ui js -->

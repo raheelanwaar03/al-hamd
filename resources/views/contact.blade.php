@@ -114,8 +114,7 @@
                 <div class="header-one-wrapper">
                     <div class="left-side-header">
                         <a href="{{ url('/') }}" class="logo-area">
-                            <img src="{{ asset('assets/images/logo.png') }}" width="80px"
-                                alt="logo">
+                            <img src="{{ asset('assets/images/logo.png') }}" width="80px" alt="logo">
                         </a>
                     </div>
 
@@ -230,7 +229,7 @@
                         </div>
                     </div>
                     <div class="col-lg-7">
-                        <form action="#" class="contact-form">
+                        <form action="mailto:alhamdislmic@gmail.com" class="contact-form">
                             <h3 class="heading-title">Send Us Message</h3>
                             <div class="form-inner">
                                 <div class="single-input">
@@ -287,8 +286,8 @@
                         <div class="footer-single-wized left-logo">
                             <div class="head">
                                 <a href="#">
-                                    <img src="{{ asset('assets/images/logo.png') }}"
-                                        width="100px" alt="logo" loading="lazy">
+                                    <img src="{{ asset('assets/images/logo.png') }}" width="100px" alt="logo"
+                                        loading="lazy">
                                 </a>
                             </div>
                             <div class="body">
@@ -300,7 +299,7 @@
                                     <li><i class="fa-regular fa-location-dot"></i>Mohalla Rarrieyan, Malkiyar, Haripur
                                     </li>
                                     <li><i class="fa-regular fa-phone"></i><a href="tel:+92 313 0567126">
-                                        +92 313 0567126</a></li>
+                                            +92 313 0567126</a></li>
                                     <li><i class="fa-regular fa-envelope"></i>
                                         info@alhamdschool.com</li>
                                 </ul>
