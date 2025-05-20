@@ -57,11 +57,22 @@
 <body>
 
     {{-- PopUp --}}
-
     <div id="overlay"></div>
     <div id="popup">
-        <h2>Welcome!</h2>
-        <p>Principal Massage</p>
+        <h4>As-salamu Alaikum wa Rahmatullahi wa Barakatuh!</h4>
+        <p>It is my honor and privilege to welcome you to Al-Hamd Islamic School—a place where knowledge is pursued
+            with purpose, character is cultivated through faith, and innovation is embraced with open hearts.
+            At Al-Hamd, we strive to create a nurturing environment where students grow academically, spiritually, and
+            socially. Our curriculum blends Islamic teachings with advanced instruction in STEM and Robotics, allowing
+            our students to become forward-thinkers grounded in Islamic values.
+            Every learner at Al-Hamd is guided to develop a strong identity, a love for learning, and the skills needed
+            for success in today’s world. Our faculty and staff are passionate educators committed to helping students
+            reach their full potential—in this life and the next, insha’Allah.
+            I warmly invite you to visit our school, meet our team, and experience the inspiring atmosphere of Al-Hamd
+            Islamic School.
+            Warm regards,
+            Mrs. Imtiaz Bibi
+            Principal, Al-Hamd Islamic School</p>
         <button id="closeBtn" style="background-color:#9851f5;color:white;border-radius:20px;">Close</button>
     </div>
 
