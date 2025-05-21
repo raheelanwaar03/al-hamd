@@ -55,7 +55,6 @@
 </head>
 
 <body>
-
     {{-- PopUp --}}
     <div id="overlay"></div>
     <div id="popup">
@@ -72,7 +71,22 @@
             Islamic School.
             Warm regards,
             Mrs. Imtiaz Bibi
-            Principal, Al-Hamd Islamic School</p>
+            Principal, Al-Hamd Islamic School
+            <br>
+            Welcome to Al-Hamd Islamic School, where the foundation of education is laid with Taqwa (God-consciousness)
+            and built with the tools of modern knowledge.
+            Our vision was to create a school where students don’t have to choose between faith and future. Through
+            high-quality academic programs, a focus on Islamic character, and state-of-the-art STEM & Robotics labs, we
+            are equipping the next generation with the tools to lead, serve, and succeed.
+            Al-Hamd was founded with a mission: to inspire students to become faithful, capable, and compassionate
+            leaders of tomorrow. We believe in holistic development—nurturing the soul, sharpening the mind, and
+            building the skills needed to thrive in a complex world.
+            I extend my heartfelt gratitude to our staff, parents, and community who continue to support this noble
+            mission. May Allah (SWT) guide our efforts and bless our students with success in both worlds.
+            Sincerely,
+            Mr. Qazi Muhammad Waqas
+            Managing Director, Al-Hamd Islamic School
+        </p>
         <button id="closeBtn" style="background-color:#9851f5;color:white;border-radius:20px;">Close</button>
     </div>
 
