@@ -41,7 +41,7 @@
                             <div class="right-information">
                                 <ul class="social-area">
                                     <li>
-                                        <a href="https://www.facebook.com/share/15VMcb2n5v/  ">
+                                        <a href="https://www.facebook.com/share/15VMcb2n5v/">
                                             <svg width="16" height="16" viewBox="0 0 16 16" fill="none"
                                                 xmlns="http://www.w3.org/2000/svg">
                                                 <path
@@ -159,10 +159,15 @@
                                         alt="">About Us</p>
                                 <h2 class="section-title">Inspiring Excellence with Faith and Innovation
                                 </h2>
-                                <p class="desc">Al-Hamd Islamic School was founded with a vision to provide
-                                    high-quality education grounded in Islamic values. We are more than just a school—we
-                                    are a community that nurtures academic achievement, personal growth, and spiritual
-                                    development.
+                                <p class="desc">
+                                    Al-Hamd Islamic School was founded with a vision to provide high-quality education
+                                    grounded in Islamic values. We are more than just a school—we are a community that
+                                    nurtures academic achievement, personal growth, and spiritual development.
+                                    We take pride in being the first in town to integrate advanced STEM and Robotics
+                                    programs within an Islamic learning environment. Our dedicated faculty, supportive
+                                    environment, and state-of-the-art facilities make Al-Hamd a place where students
+                                    thrive intellectually and morally.
+
                                 </p>
                             </div>
                             <ul class="about-wrapper">

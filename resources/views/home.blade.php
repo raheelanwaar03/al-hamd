@@ -20,6 +20,7 @@
     <link rel="stylesheet" href="assets/css/vendor/metismenu.css">
     <!-- custom style css -->
     <link rel="stylesheet" href="assets/css/style.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
 
     <style>
         #popup {
@@ -50,46 +51,76 @@
             margin-top: 10px;
             padding: 5px 10px;
         }
+
+        .modal-dialog-centered {
+            display: flex;
+            align-items: center;
+            min-height: calc(100% - 1rem);
+        }
     </style>
 
 </head>
 
 <body>
-    {{-- PopUp --}}
-    <div id="overlay"></div>
-    <div id="popup">
-        <h4>As-salamu Alaikum wa Rahmatullahi wa Barakatuh!</h4>
-        <p>It is my honor and privilege to welcome you to Al-Hamd Islamic School—a place where knowledge is pursued
-            with purpose, character is cultivated through faith, and innovation is embraced with open hearts.
-            At Al-Hamd, we strive to create a nurturing environment where students grow academically, spiritually, and
-            socially. Our curriculum blends Islamic teachings with advanced instruction in STEM and Robotics, allowing
-            our students to become forward-thinkers grounded in Islamic values.
-            Every learner at Al-Hamd is guided to develop a strong identity, a love for learning, and the skills needed
-            for success in today’s world. Our faculty and staff are passionate educators committed to helping students
-            reach their full potential—in this life and the next, insha’Allah.
-            I warmly invite you to visit our school, meet our team, and experience the inspiring atmosphere of Al-Hamd
-            Islamic School.
-            Warm regards,
-            Mrs. Imtiaz Bibi
-            Principal, Al-Hamd Islamic School
-            <br>
-            Welcome to Al-Hamd Islamic School, where the foundation of education is laid with Taqwa (God-consciousness)
-            and built with the tools of modern knowledge.
-            Our vision was to create a school where students don’t have to choose between faith and future. Through
-            high-quality academic programs, a focus on Islamic character, and state-of-the-art STEM & Robotics labs, we
-            are equipping the next generation with the tools to lead, serve, and succeed.
-            Al-Hamd was founded with a mission: to inspire students to become faithful, capable, and compassionate
-            leaders of tomorrow. We believe in holistic development—nurturing the soul, sharpening the mind, and
-            building the skills needed to thrive in a complex world.
-            I extend my heartfelt gratitude to our staff, parents, and community who continue to support this noble
-            mission. May Allah (SWT) guide our efforts and bless our students with success in both worlds.
-            Sincerely,
-            Mr. Qazi Muhammad Waqas
-            Managing Director, Al-Hamd Islamic School
-        </p>
-        <button id="closeBtn" style="background-color:#9851f5;color:white;border-radius:20px;">Close</button>
-    </div>
 
+    <div class="modal fade" id="dailyPopup" tabindex="-1" aria-labelledby="dailyPopupLabel" aria-hidden="true">
+        <div class="modal-dialog modal-dialog-centered">
+            <div class="modal-content text-center">
+                <div class="modal-header">
+                    <h5 class="modal-title w-100" id="dailyPopupLabel">Daily Reminder</h5>
+                </div>
+                <div class="modal-body">
+                    <h4>Message from the Principal</h4>
+                    <hr>
+                    <h5>As-salamu Alaikum wa Rahmatullahi wa Barakatuh,</h5>
+                    <p>It is my honor and privilege to welcome you to Al-Hamd Islamic School—a place where knowledge is
+                        pursued
+                        with purpose, character is cultivated through faith, and innovation is embraced with open
+                        hearts.
+                        At Al-Hamd, we strive to create a nurturing environment where students grow academically,
+                        spiritually, and
+                        socially. Our curriculum blends Islamic teachings with advanced instruction in STEM and
+                        Robotics, allowing
+                        our students to become forward-thinkers grounded in Islamic values.
+                        Every learner at Al-Hamd is guided to develop a strong identity, a love for learning, and the
+                        skills needed
+                        for success in today’s world. Our faculty and staff are passionate educators committed to
+                        helping students
+                        reach their full potential—in this life and the next, insha’Allah.
+                        I warmly invite you to visit our school, meet our team, and experience the inspiring atmosphere
+                        of Al-Hamd
+                        Islamic School.
+                        Warm regards,
+                        Mrs. Imtiaz Bibi
+                        Principal, Al-Hamd Islamic School
+                        <br>
+                        Welcome to Al-Hamd Islamic School, where the foundation of education is laid with Taqwa
+                        (God-consciousness)
+                        and built with the tools of modern knowledge.
+                        Our vision was to create a school where students don’t have to choose between faith and future.
+                        Through
+                        high-quality academic programs, a focus on Islamic character, and state-of-the-art STEM &
+                        Robotics labs, we
+                        are equipping the next generation with the tools to lead, serve, and succeed.
+                        Al-Hamd was founded with a mission: to inspire students to become faithful, capable, and
+                        compassionate
+                        leaders of tomorrow. We believe in holistic development—nurturing the soul, sharpening the mind,
+                        and
+                        building the skills needed to thrive in a complex world.
+                        I extend my heartfelt gratitude to our staff, parents, and community who continue to support
+                        this noble
+                        mission. May Allah (SWT) guide our efforts and bless our students with success in both worlds.
+                        Sincerely,
+                        Mr. Qazi Muhammad Waqas
+                        Managing Director, Al-Hamd Islamic School
+                    </p>
+                </div>
+                <div class="modal-footer justify-content-center">
+                    <button type="button" class="btn btn-primary" data-bs-dismiss="modal">Okay, Got it!</button>
+                </div>
+            </div>
+        </div>
+    </div>
     <!-- header style one -->
     <header class="header-one header--sticky">
         <div class="container">
@@ -171,10 +202,10 @@
                     alt="shape_image"></div>
             <div class="shape two" data-speed="0.04"><img src="assets/images/banner/shape/02.svg" alt="shape_image">
             </div>
-            <div class="shape three" data-speed="0.04" data-revert="true"><img src="assets/images/banner/shape/03.svg"
-                    alt="shape_image"></div>
-            <div class="shape four" data-speed="0.04" data-revert="true"><img src="assets/images/banner/shape/04.svg"
-                    alt="shape_image"></div>
+            <div class="shape three" data-speed="0.04" data-revert="true"><img
+                    src="assets/images/banner/shape/03.svg" alt="shape_image"></div>
+            <div class="shape four" data-speed="0.04" data-revert="true"><img
+                    src="assets/images/banner/shape/04.svg" alt="shape_image"></div>
             <div class="shape five" data-speed="0.04"><img src="assets/images/banner/shape/05.svg"
                     alt="shape_image">
             </div>
@@ -258,6 +289,45 @@
         </div>
     </section>
     <!-- about area end -->
+
+    <section class="rts-about-area area-3 rts-section-gap">
+        <div class="container">
+            <div class="section-inner">
+                <div class="section-bg-area">
+                    <img src="{{ asset('assets/images/about/about-bg.png') }}" alt="">
+                </div>
+                <div class="content-inner rts-shape-move">
+                    <div class="image-area">
+                        <img src="{{ asset('assets/images/about/about-03.jpg') }}" width="295" alt="">
+                        <img class="shape-img" src="{{ asset('assets/images/about/shape-01.png') }}" alt="">
+                        <img class="shape-img2" src="{{ asset('assets/images/banner/shape/02.svg') }}"
+                            alt="">
+                    </div>
+                    <div class="right-side-content">
+                        <h2 class="heading-title">Our History</h2>
+                        <p class="desc">
+                            Al Hamd Islamic School was established in 2022 with a commitment to providing quality
+                            education rooted in Islamic values. Initially, the school started with pre-primary and
+                            primary classes, focusing on foundational learning and character development. In 2024, the
+                            school expanded to include matric classes, offering a comprehensive curriculum to support
+                            academic excellence. Recognizing the importance of modern education, in 2025, Al Hamd
+                            Islamic School introduced STEM and robotics education, equipping students with essential
+                            skills in science, technology, engineering, and mathematics while staying true to Islamic
+                            principles
+                        </p>
+                    </div>
+                </div>
+                <div class="shape-image">
+                    <div class="shape one" data-speed="0.04" data-revert="true"><img
+                            src="{{ asset('assets/images/about/01.svg') }}" alt="shape_image"></div>
+                    <div class="shape two" data-speed="0.04"><img src="{{ asset('assets/images/about/02.svg') }}"
+                            alt="shape_image"></div>
+                    <div class="shape three" data-speed="0.04" data-revert="true"><img
+                            src="{{ asset('assets/images/about/03.svg') }}" alt="shape_image"></div>
+                </div>
+            </div>
+        </div>
+    </section>
 
     <!-- class area start -->
     <section class="rts-class-area">
@@ -978,33 +1048,20 @@
     </div>
 
     <!-- all scripts -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
     <script>
-        function shouldShowPopup() {
-            const lastShown = localStorage.getItem('popupShownDate');
-            const today = new Date().toISOString().split('T')[0]; // Get YYYY-MM-DD
+        document.addEventListener("DOMContentLoaded", function() {
+            const popupKey = "lastPopupDate";
+            const today = new Date().toISOString().slice(0, 10); // YYYY-MM-DD
+
+            const lastShown = localStorage.getItem(popupKey);
 
             if (lastShown !== today) {
-                localStorage.setItem('popupShownDate', today);
-                return true;
+                const myModal = new bootstrap.Modal(document.getElementById('dailyPopup'));
+                myModal.show();
+                localStorage.setItem(popupKey, today);
             }
-            return false;
-        }
-
-        function showPopup() {
-            document.getElementById('overlay').style.display = 'block';
-            document.getElementById('popup').style.display = 'block';
-        }
-
-        function hidePopup() {
-            document.getElementById('overlay').style.display = 'none';
-            document.getElementById('popup').style.display = 'none';
-        }
-
-        document.getElementById('closeBtn').addEventListener('click', hidePopup);
-
-        if (shouldShowPopup()) {
-            showPopup();
-        }
+        });
     </script>
     <!-- jquery min js -->
     <script src="assets/js/vendor/jquery.min.js"></script>
