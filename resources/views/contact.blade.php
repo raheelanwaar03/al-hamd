@@ -23,7 +23,7 @@
 </head>
 
 <body>
-
+    <x-alert />
     <!-- header style one -->
     <!-- header style one -->
     <header class="header-one header--sticky header-default">
@@ -245,11 +245,8 @@
                                     <div class="left-filter">
                                         <select class="nice-select" name="price">
                                             <option>Subject</option>
-                                            <option value="asc">Design</option>
-                                            <option value="desc">Development</option>
-                                            <option value="pop">Popularity</option>
-                                            <option value="low">Price</option>
-                                            <option value="high">Stars</option>
+                                            <option value="admission">Admission</option>
+                                            <option value="fees">Fees</option>
                                         </select>
                                     </div>
                                 </div>
@@ -270,7 +267,8 @@
     <div class="rts-footer-area section-bg">
         <div class="container">
             <div class="footer-top">
-                <form action="#">
+                <form action="{{ route('subscribe') }}" method="POST">
+                    @csrf
                     <h3 class="form-title">Don’t Miss Awesome Story From Our Alumni</h3>
                     <div class="form-inner">
                         <input type="email" name="Email" placeholder="Enter Your mail" required>

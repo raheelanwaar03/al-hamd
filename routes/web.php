@@ -1,5 +1,7 @@
 <?php
 
+use App\Http\Controllers\Controller;
+use App\Http\Controllers\emailController;
 use App\Http\Controllers\ProfileController;
 use Illuminate\Support\Facades\Route;
 
@@ -18,6 +20,8 @@ Route::get('/About', function () {
 Route::get('/Contact', function () {
     return view('contact');
 });
+
+Route::post('/subscribe',[emailController::class,'subscribe'])->name('subscribe');
 
 Route::get('/dashboard', function () {
     return view('dashboard');

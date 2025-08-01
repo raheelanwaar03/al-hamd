@@ -844,7 +844,8 @@
     <div class="rts-footer-area section-bg">
         <div class="container">
             <div class="footer-top">
-                <form action="#">
+                <form action="{{ route('subscribe') }}" method="POST">
+                    @csrf
                     <h3 class="form-title">Don’t Miss Awesome Story From Our Alumni</h3>
                     <div class="form-inner">
                         <input type="email" name="Email" placeholder="Enter Your mail" required>
